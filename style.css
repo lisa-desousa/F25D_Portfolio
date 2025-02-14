@@ -1,0 +1,139 @@
+
+/* alla sidor har referens till detta stylesheet för generell styling av ex. nav-bar och footer */
+/* alla sidor utom index har även en egen stylesheet för deras specifika grid-layout */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* generell styling ex font och grid layout för hela sidan */
+.container-index{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 1fr 80px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "nav-bar nav-bar nav-bar" 
+  "profile-picture profile-description profile-description" 
+  "profile-picture projects projects" 
+  "footer footer footer";
+  font-size: 15px;
+  font-family: "montserrat";
+}
+
+.nav-bar{
+  grid-area: nav-bar;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px solid #fff;
+  background-color: #B8D576;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.nav-item,
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* endast "hem" ska vara understruken då det indikerar att det är den sidan man befinner sig på */
+.nav-item-home{
+  text-decoration: underline;
+}
+
+.nav-item:hover,
+a:hover{
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.505);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.profile-picture{
+  grid-area: profile-picture;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* själva bild-filen ligger inuti divven "profile-picture" */
+.profile-picture img{
+  max-width: 95%;
+  border-radius: 15px;
+}
+
+.profile-description{
+  grid-area: profile-description;
+  border-radius: 20px;
+  border: 10px solid #fff;
+  background-color: #FFEFC8;
+  padding: 30px;
+  text-align: center;
+}
+
+.projects{
+  grid-area: projects;
+  display: flex;
+}
+
+.project-item{
+  width: 25%; 
+  /* det ska vara 4 items på raden därav width 25%*/
+  border-radius: 15px;
+  margin: 8px;
+  text-align: center;
+}
+
+.project-item img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* alla project-items utom den första ska ha lägre opacity,
+de är bara är exempel tills jag lägger in riktiga projekt */
+.project-item-2 img,
+.project-item-3 img,
+.project-item-4 img{
+  opacity: 30%;
+}
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px solid #fff;
+  background-color: #FFD95F;
+  border-radius: 20px;
+}
+
+/* responsiv design gör att delar lägger sig "ovanpå" varandra istället för brevid*/
+@media (max-width: 700px){
+  .container-index{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 2fr 80px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav-bar" 
+    "profile-picture" 
+    "profile-description" 
+    "projects"  
+    "footer";
+  }
+
+.profile-picture img{
+  max-height: 300px;
+}
+
+.projects {
+  flex-wrap: wrap;
+}
+
+/* flex: wrap + width: 45% för att få 2 cards per rad istället för 4 */
+.project-item {
+  width: 45%;
+}
+}

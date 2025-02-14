@@ -1,0 +1,87 @@
+
+/* specifik grid layout för varje sida */
+.container-cv{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 20px 1fr 80px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "nav-bar nav-bar" 
+  "edu-header work-header"
+  "education work" 
+  "footer footer";
+  font-size: 15px;
+  font-family: "montserrat";
+}
+
+.work-heading{
+  grid-area: work-header;
+}
+
+.edu-heading{
+  grid-area: edu-header;
+}
+
+.work-heading, 
+.edu-heading{
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.work-card{
+  grid-area: work;
+}
+
+.education-card{
+  grid-area: education;
+}
+
+.work-card, 
+.education-card{
+  border: 3px solid #d4d4d4;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(103, 103, 103);
+  margin: 20px;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+.work-item-heading, 
+.education-item-heading{
+  font-weight: 500;
+}
+
+.work-item, 
+.education-item{
+  margin: 15px;
+}
+
+li{
+  margin: 5px;
+}
+
+/* ser till så att aktiva sidan är understruken men ej hem */
+.nav-item-home{
+  text-decoration: none;
+}
+
+.nav-item-cv{
+  text-decoration: underline;
+}
+
+/* responsiv design som lägger cards i kolumn istället för brevid varandra*/
+@media (max-width: 700px){
+  .container-cv{
+  display: grid;
+  grid-template-rows: 80px 20px 1fr 20px 1fr 80px;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "nav-bar" 
+  "edu-header"
+  "education"
+  "work-header" 
+  "work" 
+  "footer";
+  }
+}

@@ -1,0 +1,72 @@
+
+/* specifik grid layout för varje sida */
+.container-contact{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "nav-bar" 
+  "info" 
+  "footer";
+  font-size: 15px;
+  font-family: "montserrat";
+}
+
+.contact-card{
+  grid-area: info;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  border: 3px solid #d4d4d4;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(103, 103, 103);
+}
+
+.contact-info{
+  margin: 100px;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.contact-info h3{
+  font-size: 1.2rem;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.contact-image img{
+  border-radius: 15px;
+  height: 100%;
+}
+
+/* ser till så att aktiva sidan är understruken men ej hem */
+.nav-item-home{
+  text-decoration: none;
+}
+
+.nav-item-contact{
+  text-decoration: underline;
+}
+
+/* responsiv design som gör card till kolumn-formad istälelt för rad-formad if that makes sense*/
+@media (max-width: 700px){
+  .contact-card{
+    flex-direction: column;
+  }
+
+  .contact-image img{
+    width: 100%;
+  }
+
+  /* försök att lägga texten någorlunda centrerad utan för mycket marginal åt något håll */
+  /* behövs fler media quieries för att det ska passa med fler skärmar */
+  .contact-info{
+    margin: 30px;
+    padding: 0;
+  }
+
+  .contact-info h3{
+    font-size: 1rem;
+  }
+}

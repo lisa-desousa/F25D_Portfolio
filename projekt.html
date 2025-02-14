@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- referens till font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- referens till google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- referens till egna stylesheets -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style_projekt.css">
+  <title>Projekt</title>
+</head>
+<body>
+  <!-- container-projects: motsvarande till container-index -->
+  <div class="container-projects">
+
+    <div class="nav-bar">
+      <!-- nav-bar med länk till alla sidor -->
+      <div class="nav-item nav-item-home"><a href="/index.html"><i class="fa-solid fa-house"></i> Hem</a></div>
+      <div class="nav-item nav-item-cv"><a href="/cv.html"><i class="fa-solid fa-file icon"></i> CV</a></div>
+      <div class="nav-item nav-item-projects"><a href="/projekt.html"><i class="fa-solid fa-pencil icon"></i> Projekt</a></div>
+      <div class="nav-item nav-item-contact"><a href="/kontakt.html"><i class="fa-solid fa-phone icon"></i> Kontakt</a></div>
+    </div>
+
+    <!-- main content består av ett project card och en "kommer snart" text längst ner -->
+     <!-- project card har en bild och beskrivning i en "box" -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/login_page_closeup.png" alt="login-page" width="430px">
+      </div>
+      <div class="project-description">
+        LOGIN PAGE<br>Detta projekt är en login-sida som gjordes som enn uppgift i kursen "webbutveckling med javascript grund". Sidan är gjord endast med HTML och CSS och har därför ingen störe funktionalitet utan syftet var snarare att bli bekväm med att använda enklare layout-metoder med hjälp av CSS.
+      </div>
+    </div>
+    
+    <!-- text som är nedanför project-card -->
+    <h3 id="more-projects">Mer projekt kommer snart...</h3>
+
+    <div class="footer">
+      <!-- footer med sociala medier -->
+       <div class="footer-item"><a href="https://www.linkedin.com/in/lisa-desousa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+       <div class="footer-item"><a href="https://github.com/lisa-desousa" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div>
+       <div class="footer-item"><a href="/kontakt.html"><i class="fa-solid fa-envelope"></i> Email</a></div>
+    </div>
+
+  </div>
+  <!-- taggen ovanför är slutet på container-cv -->
+</body>
+</html>
