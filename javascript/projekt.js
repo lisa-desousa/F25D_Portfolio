@@ -4,25 +4,25 @@ const projects = [
     id: 1,
     heading: "LOGIN PAGE",
     description: "Detta projekt är en login-sida som gjordes som enn uppgift i kursen 'webbutveckling med javascript grund'. Sidan är gjord endast med HTML och CSS och har därför ingen störe funktionalitet utan syftet var snarare att bli bekväm med att använda enklare layout-metoder med hjälp av CSS.",
-    image: "/images/login_page_closeup.png"
+    image: "../images/login_page_closeup.png"
   },
   {
     id: 2,
     heading: "STEN, SAX, PÅSE",
     description: "Detta projekt gjordes under en genomgång i kursen 'webbutveckling med javascript grund'. Det är ett enkelt spel där man spelar sten, sax, påse mot datorn som i sin tur väljer alternativ slumpmässigt. Syftet var att bli bekväm med att jobba med enklare javascript.",
-    image: "/images/rock-paper-scissors.png"
+    image: "../images/rock-paper-scissors.png"
   },
   {
     id: 3,
     heading: "DRAWING CANVAS",
     description: "Detta projekt gjordes under en genomgång i kursen 'webbutveckling med javascript grund'. Det är en ruta där man kan rita med olika färger genom att hålla inne musen. Man kan även byta färg med en färg-väljare samt med tangenterna b (blå), r (röd), g (grön) samt e för att sudda.",
-    image: "/images/drawing-canvas.png"
+    image: "../images/drawing-canvas.png"
   },
   {
     id: 4,
     heading: "NÄSTA PROJEKT!",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sunt atque deleniti magni animi? Accusantium maiores voluptas, est distinctio modi ipsam dignissimos, adipisci tempora aut a tenetur. Minima magni provident laborum velit itaque sunt veniam aperiam.",
-    image: "/images/js-kod.jpg"
+    image: "../images/js-kod.jpg"
   },
 ];
 
