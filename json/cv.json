@@ -1,0 +1,45 @@
+{
+
+"work_exp": [
+{
+  "title": "2019 - pågående: Ur & Penn, Säljare",
+  "tasks": [
+    "Försäljning av klockor & smycken samt enklare reparationer av armbandsur", 
+    "Ta emot varor och hålla butiken påfylld och inbjudande enligt pågående kampanj", 
+    "Självständigt arbete timmarna runt öppning och stängning", 
+    "Arbetat utifrån dagliga försäljningsmål, försäljningstävlingar med andra butiker, merförsäljning & upsale m.m."
+  ]
+},
+{
+  "title": " 2018 - pågående: Filmstaden Bergakungen, Biografmedarbetare",
+  "tasks": [
+    "Försäljning av biljetter & godis, kundservice, städning av gästutrymmen, påfyllning i butik samt förberedelse av varm mat & popcorn", 
+    "Utbildad som “tekniker”, dvs har hand om tekniken på biografen såsom projektorer, spellistor, ljud & ljus", 
+    "Har hjälpt till med utbildning av ny personal", 
+    "Verksam som facklig representant inom Scen & Film och får därmed vara delaktig i förhandlingar om lön, avtal m.m med ledningsgruppen"
+  ]
+}
+],
+
+"education": [
+{
+  "title": "2025 - pågående: YH Borås, Frontendutvecklare React",
+  "tasks": [
+    "Två års program för att bli webbutvecklare",
+    "Störst fokus på front-end utveckling men även en del backend med node.js",
+    "Färdigheter i HTML, CSS, JS m.m",
+    "Programmet inehåller även två praktikperioder och ett examensarbete"
+  ]
+},
+{
+  "title": "2021 - 2024: Lunds Universitet, Kandidatexamen Psykologi",
+  "tasks": [
+    "Egenbyggd kandidatexamen där jag läst fristående kurser inom främst psykologi, men också bland annat kommunikation, hållbar utveckling, programmering, AI & informationssystem.",
+    "Jag har förlagt min utbildning på flera universitet förutom Lund; Göteborgs Universitet, Luleå Tekniska Universitet, samt University of Queensland i Brisbane, Australien.",
+    "C-uppsats skriven inom området kognition; specifikt påverkan av olika sociala grupper på minnet.",
+    "Min utbildning har även gett mig en del erfarenhet av att jobba med Microsoft Office; främst Word, Powerpoint och Excel."
+  ]
+}
+]
+
+}

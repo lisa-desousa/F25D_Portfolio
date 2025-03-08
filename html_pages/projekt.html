@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- referens till font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- referens till google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- referens till egna stylesheets -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style_projekt.css">
+
+  <!-- beskrivning av sidan samt titel -->
+  <meta name="description" content="Här kan du bläddra bland några av mina projekt inom frontend-webbutveckling.">
+  <title>Portfolio Projekt</title>
+</head>
+<body>
+  <!-- container-projects: motsvarande till container-index -->
+  <main class="container-projects">
+
+    <nav>
+      <!-- nav-bar med länk till alla sidor -->
+      <div class="nav-item nav-item-home"><a href="/html_pages/index.html"><i class="fa-solid fa-house"></i> Hem</a></div>
+      <div class="nav-item nav-item-cv"><a href="/html_pages/cv.html"><i class="fa-solid fa-file icon"></i> CV</a></div>
+      <div class="nav-item nav-item-projects"><a href="/html_pages/projekt.html"><i class="fa-solid fa-pencil icon"></i> Projekt</a></div>
+      <div class="nav-item nav-item-contact"><a href="/html_pages/kontakt.html"><i class="fa-solid fa-phone icon"></i> Kontakt</a></div>
+    </nav>
+
+    <!-- main content består av en project card "karusell"-->
+
+      <!-- innehåll i project card laddas från JS -->
+    <div class="project-card">
+      <!-- bild till varje projekt -->
+      <div class="project-image">
+        <img id="project-img" src="#" alt="project-picture">
+      </div>
+
+      <!-- info-delen har rubrik, text och fram/bak-knappar -->
+      <div class="project-info">
+        <div class="project-heading">
+          <!-- titel -->
+        </div>
+        <div class="project-description">
+          <!-- info -->
+        </div>
+        <div class="buttons">
+          <button id="prev-btn"><i class="fa-solid fa-caret-left"></i></button>
+      <button id="next-btn"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+      </div>
+      
+    </div>
+    <!-- slutet på project card -->
+
+    <footer>
+      <!-- sociala medier i footer -->
+       <div class="footer-item"><a href="https://www.linkedin.com/in/lisa-desousa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+       <div class="footer-item"><a href="https://github.com/lisa-desousa" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div>
+       <div class="footer-item"><a href="/html_pages/kontakt.html"><i class="fa-solid fa-envelope"></i> Email</a></div>
+    </footer>
+
+  </main>
+  <!-- taggen ovanför är slutet på container-cv -->
+
+  <script src="/javascript/projekt.js"></script>
+</body>
+</html>

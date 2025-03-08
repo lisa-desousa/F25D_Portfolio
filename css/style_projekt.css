@@ -1,0 +1,89 @@
+
+/* specifik grid layout för varje sida */
+.container-projects{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "nav-bar" 
+  "project-card"
+  "footer";
+  font-size: 15px;
+  font-family: "montserrat";
+}
+
+/* ser till så att aktiva sidan är understruken men ej hem */
+.nav-item-home{
+  text-decoration: none;
+}
+
+.nav-item-projects{
+  text-decoration: underline;
+}
+
+.project-card{
+  grid-area: project-card;
+  display: flex;
+  justify-self: center;
+  width: 60%;
+  margin: 20px;
+  border: 3px solid #d4d4d4;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(103, 103, 103);
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-heading{
+  font-size: 1.2rem;
+}
+
+.project-description{
+  text-align: center;
+  margin: 20px;
+  line-height: 20px;
+}
+
+#project-img{
+  border-radius: 15px;
+  height: 100%;
+  width: 340px;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+button:hover{
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.505);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+/* responsiv design som gör card till kolumn-formad istälelt för rad-formad if that makes sense*/
+
+@media (max-width: 700px){
+  .project-card{
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #project-img{
+    width: 100%;
+  }
+
+  .project-heading{
+    margin-top: 15px;
+  }
+
+}

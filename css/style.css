@@ -22,7 +22,7 @@
   font-family: "montserrat";
 }
 
-.nav-bar{
+nav{
   grid-area: nav-bar;
   display: flex;
   justify-content: space-around;
@@ -73,6 +73,10 @@ a:hover{
   text-align: center;
 }
 
+h2{
+  font-size: 1rem;
+}
+
 .projects{
   grid-area: projects;
   display: flex;
@@ -87,19 +91,17 @@ a:hover{
 }
 
 .project-item img{
-  max-width: 100%;
+  width: 90%;
   border-radius: 10px;
+  border: 2px solid #d4d4d4;
 }
 
-/* alla project-items utom den första ska ha lägre opacity,
-de är bara är exempel tills jag lägger in riktiga projekt */
-.project-item-2 img,
-.project-item-3 img,
+/* "kommer snart"- projektet ska va suddig då det endast är exempel */
 .project-item-4 img{
   opacity: 30%;
 }
 
-.footer{
+footer{
   grid-area: footer;
   display: flex;
   justify-content: space-around;

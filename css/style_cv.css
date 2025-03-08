@@ -29,6 +29,24 @@
   font-weight: 600;
 }
 
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover{
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.505);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* ge denna klass till element som ska försvinna vid klick-event */
+.hide-text{
+  display: none;
+}
+
 .work-card{
   grid-area: work;
 }
@@ -47,13 +65,11 @@
   font-size: 0.7rem;
 }
 
-.work-item-heading, 
-.education-item-heading{
+.cv-item-heading{
   font-weight: 500;
 }
 
-.work-item, 
-.education-item{
+.cv-item{
   margin: 15px;
 }
 

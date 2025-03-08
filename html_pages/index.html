@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- referens till font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- referens till google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- referens till eget stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- beskrivning av sidan samt titel -->
+  <meta name="description" content="Välkommen till min portfolio! Här kan du läsa en kort beskrivning om mig och se förhandsvisningar av mina projekt som frontendutvecklare.">
+  <title>Portfolio Startsida</title>
+</head>
+
+<body>
+  <!-- container-index innehåller allt content: nav-bar, profil (bild + presentation + projekt + footer med sociala medier) -->
+  <main class="container-index">
+
+    <nav>
+      <!-- nav-bar med länk till alla sidor -->
+      <div class="nav-item nav-item-home"><a href="/html_pages/index.html"><i class="fa-solid fa-house"></i> Hem</a></div>
+      <div class="nav-item nav-item-cv"><a href="/html_pages/cv.html"><i class="fa-solid fa-file icon"></i> CV</a></div>
+      <div class="nav-item nav-item-projects"><a href="/html_pages/projekt.html"><i class="fa-solid fa-pencil icon"></i> Projekt</a></div>
+      <div class="nav-item nav-item-contact"><a href="/html_pages/kontakt.html"><i class="fa-solid fa-phone icon"></i> Kontakt</a></div>
+    </nav>
+
+    <aside class="profile-picture">
+        <!-- profilbild -->
+         <img src="/images/profilbild.jpg" alt="profilbild">
+    </aside>
+
+    <section class="profile-description">
+        <!-- intro/beskrivning om mig -->
+         <h2 class="profile-heading">Lisa de Sousa Mestre</h2>
+         <p>Hej! Jag går just nu första terminen på Yrkeshögskolan Borås som Frontendutvecklare och jag jobbar även deltid i min hemstad Göteborg. Den här sidan är ett projekt inom utbildningen som ska fungera som en portfolio för mina nuvarande & kommande projekt. Se en förhandsvisning på mina första projekt nedan, och stay tuned för fler!</p>
+    </section>
+    
+    <div class="projects">
+      <!-- förhandsvisningar till projekt -->
+      <div class="project-item project-item-1">
+        <img src="/images/login_page.png" alt="login page">
+        <a href="/html_pages/projekt.html">Login Page</a>
+      </div>
+      <div class="project-item project-item-2">
+        <img src="/images/rock-paper-scissors.png" alt="sten, sax, påse">
+        <a href="/html_pages/projekt.html">Sten, sax, påse</a>
+      </div>
+      <div class="project-item project-item-3">
+        <img src="/images/drawing-canvas.png" alt="drawing canvas">
+        <a href="/html_pages/projekt.html">Drawing Canvas</a>
+      </div>
+      <div class="project-item project-item-4">
+        <img src="/images/js-kod.jpg" alt="javascript kod">
+        <a href="/html_pages/projekt.html">Kommer snart!</a>
+      </div>
+    </div>
+
+    <footer>
+      <!-- sociala medier i footer -->
+       <div class="footer-item"><a href="https://www.linkedin.com/in/lisa-desousa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+       <div class="footer-item"><a href="https://github.com/lisa-desousa" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div>
+       <div class="footer-item"><a href="/html_pages/kontakt.html"><i class="fa-solid fa-envelope"></i> Email</a></div>
+    </footer>
+
+  </main>
+  <!-- taggen ovanför är slutet på container-index -->
+
+</body>
+</html>
