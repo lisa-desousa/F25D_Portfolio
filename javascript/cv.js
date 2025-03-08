@@ -1,7 +1,7 @@
 
 function fetchCv() { //skapa en funktion för att importera json-datan
 
-  fetch("/json/cv.json") //hämtar datan
+  fetch("../json/cv.json") //hämtar datan
   .then(response => response.json()) //konverterar till js
   .then(data => { //funktion som gör något med datan, kort sätt att skriva function(data)
     
